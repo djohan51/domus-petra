@@ -76,6 +76,18 @@ main {
 	padding: 20px;
 }
 
+.principal {
+	width:80%;
+	display: flexbox;
+	align: center;
+}
+
+
+p {
+	text-align: justify;
+
+}
+
 .sobre {
 	background-color: #f7f7f7;
 	padding: 20px;
