@@ -18,9 +18,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 0px 20px 0px 20px ;
 	background-color: #333;
 	list-style: none;
+	height: 80px;
+
 }
 
 .nav-menu a {
@@ -42,7 +44,12 @@ header {
 }
 
 .logo-inicial a:hover  {
-    background-color: #575757;
+    background-color: none;
+    border-radius: 40px; /* Bordas arredondadas ao passar o mouse */
+}
+
+.nav-menu a .logo-inicial {
+	background-color: none;
     border-radius: 40px; /* Bordas arredondadas ao passar o mouse */
 }
 
