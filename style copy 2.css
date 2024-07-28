@@ -1,0 +1,217 @@
+/* Reset básico para remover margens e padding */
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+header {
+	
+	position: fixed; /* Fixa o menu na parte superior */
+	top: 0;          /* Alinha o menu ao topo */
+	width: 100%;     /* Faz o menu ocupar toda a largura da página */
+	background-color: #333;
+	color: #fff;
+	padding: 0px;
+	text-align: center;
+	z-index: 1000;   /* Garante que o menu ficará acima de outros elementos */
+
+}
+
+/* Estilo do menu de navegação */
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px 0px 20px;
+	background-color: #333;
+	list-style: none;
+	height: 80px;
+
+}
+
+.nav-menu a {
+	color: white;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: flex;
+	display: inline;
+	transition: background-color 0.3s ease;
+	/* Transição suave para a mudança de cor */
+}
+
+.nav-menu a:hover {
+	background-color: #575757;
+	border-radius: 5px;
+	/* Bordas arredondadas ao passar o mouse */
+}
+
+.logo-inicial {
+	height: 100px;
+}
+
+.logo-inicial a:hover {
+	background-color: none;
+	border-radius: 40px;
+	/* Bordas arredondadas ao passar o mouse */
+}
+
+.nav-menu a .logo-inicial {
+	background-color: none;
+	border-radius: 40px;
+	/* Bordas arredondadas ao passar o mouse */
+}
+
+/* Estilo do corpo */
+body {
+	font-family: Arial, sans-serif;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.logo img {
+	width: 50%;
+	height: 50%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	width: 70%;
+	margin-top: 60px; /* Adiciona espaço para evitar que o conteúdo fique atrás do menu */
+            padding: 20px;
+}
+
+.div1, .div2, .div3 {
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+	background-color: aquamarine;
+}
+
+
+
+
+
+h2 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+p {
+	display: block;
+	margin-bottom: 20px;
+
+}
+
+.sobre {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.sobre-btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sobre-content {
+	padding: 20px;
+}
+
+.fotos {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.fotos-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.fotos-container img {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	clear: both;
+}
+
+.contato {
+	float: left;
+	margin-right: 20px;
+}
+
+.whatsapp {
+	float: right;
+	margin-left: 20px;
+}
+
+.whatsapp img {
+	width: 50px;
+	height: 50px;
+}
+
+.whatsapp-fixed {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-fixed img {
+	width: 50px;
+	height: 50px;
+}
+
+.slide-container {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	/* altura das fotos */
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	/* efeito de transição */
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
