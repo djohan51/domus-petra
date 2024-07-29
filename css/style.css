@@ -214,6 +214,7 @@ footer {
     padding: 20px;
     text-align: center;
     clear: both;
+   
 }
 
 .contato {
@@ -259,7 +260,7 @@ footer {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(187, 5, 5, 0.1);
   }
   
   h1 {
@@ -307,7 +308,7 @@ footer {
   }
   
   input[type="submit"]:hover {
-    background-color: #444;
+    background-color: #333;
   }
 
 
